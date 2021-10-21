@@ -36,7 +36,7 @@ public class SheetPresentationController: UIViewController {
         super.init(coder: aDecoder)
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
 
