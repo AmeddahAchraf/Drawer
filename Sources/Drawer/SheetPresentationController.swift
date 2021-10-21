@@ -25,6 +25,8 @@ public class SheetPresentationController: UIViewController {
 
     public init(primaryViewController: UIViewController, secondaryViewController: UIViewController) {
         super.init(nibName: nil, bundle: nil)
+        self.primaryViewController = primaryViewController
+        self.secondaryViewController = secondaryViewController as? SecondaryViewController
         secondaryViewController.view.frame = CGRect(x: 0, y: view.bounds.maxY, width: view.bounds.width, height: -view.bounds.height / 2)
     }
 
